@@ -7,6 +7,7 @@ target 'Tempo' do
 
   # Pods for Tempo
     pod 'Firebase/Core'
+    pod 'Firebase/Database'
   target 'TempoTests' do
     inherit! :search_paths
     # Pods for testing

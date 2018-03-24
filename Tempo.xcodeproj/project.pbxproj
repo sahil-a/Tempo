@@ -15,6 +15,12 @@
 		BAE786C82066A95200BFE598 /* TempoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE786C72066A95200BFE598 /* TempoTests.swift */; };
 		BAE786D32066AB9700BFE598 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAE786D22066AB9700BFE598 /* GoogleService-Info.plist */; };
 		BAE786D42066ABAA00BFE598 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAE786D22066AB9700BFE598 /* GoogleService-Info.plist */; };
+		BAE786D62066B3A900BFE598 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE786D52066B3A900BFE598 /* Marker.swift */; };
+		BAE786D92066B4BB00BFE598 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE786D82066B4BB00BFE598 /* CoreLocation.framework */; };
+		BAE786DB2066B62F00BFE598 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE786DA2066B62F00BFE598 /* Option.swift */; };
+		BAE786DD2066B6EC00BFE598 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE786DC2066B6EC00BFE598 /* Location.swift */; };
+		BAE786DF2066B78700BFE598 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE786DE2066B78700BFE598 /* User.swift */; };
+		BAE786E12066B7ED00BFE598 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE786E02066B7ED00BFE598 /* FirebaseHelper.swift */; };
 		F1E1E899E3F00A9BA34F6A0D /* Pods_Tempo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD29ECEDE088EF3755CEA4 /* Pods_Tempo.framework */; };
 		FA74DD577588C3DDE80FE17E /* Pods_TempoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0BA298313A899B306491 /* Pods_TempoTests.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +52,12 @@
 		BAE786C72066A95200BFE598 /* TempoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoTests.swift; sourceTree = "<group>"; };
 		BAE786C92066A95200BFE598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE786D22066AB9700BFE598 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAE786D52066B3A900BFE598 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		BAE786D82066B4BB00BFE598 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BAE786DA2066B62F00BFE598 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		BAE786DC2066B6EC00BFE598 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BAE786DE2066B78700BFE598 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BAE786E02066B7ED00BFE598 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		EE5D0BA298313A899B306491 /* Pods_TempoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE786D92066B4BB00BFE598 /* CoreLocation.framework in Frameworks */,
 				F1E1E899E3F00A9BA34F6A0D /* Pods_Tempo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +118,7 @@
 			children = (
 				BAE786B22066A95200BFE598 /* AppDelegate.swift */,
 				BAE786B42066A95200BFE598 /* ViewController.swift */,
+				BAE786D72066B3B300BFE598 /* Model */,
 				BAE786B62066A95200BFE598 /* Main.storyboard */,
 				BAE786B92066A95200BFE598 /* Assets.xcassets */,
 				BAE786BB2066A95200BFE598 /* LaunchScreen.storyboard */,
@@ -123,9 +137,22 @@
 			path = TempoTests;
 			sourceTree = "<group>";
 		};
+		BAE786D72066B3B300BFE598 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAE786D52066B3A900BFE598 /* Marker.swift */,
+				BAE786DA2066B62F00BFE598 /* Option.swift */,
+				BAE786DC2066B6EC00BFE598 /* Location.swift */,
+				BAE786DE2066B78700BFE598 /* User.swift */,
+				BAE786E02066B7ED00BFE598 /* FirebaseHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D4A8C12B51DF2252F6F4F76A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAE786D82066B4BB00BFE598 /* CoreLocation.framework */,
 				2CDD29ECEDE088EF3755CEA4 /* Pods_Tempo.framework */,
 				EE5D0BA298313A899B306491 /* Pods_TempoTests.framework */,
 			);
@@ -313,11 +340,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tempo/Pods-Tempo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,8 +376,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE786E12066B7ED00BFE598 /* FirebaseHelper.swift in Sources */,
+				BAE786DB2066B62F00BFE598 /* Option.swift in Sources */,
 				BAE786B52066A95200BFE598 /* ViewController.swift in Sources */,
+				BAE786DF2066B78700BFE598 /* User.swift in Sources */,
+				BAE786DD2066B6EC00BFE598 /* Location.swift in Sources */,
 				BAE786B32066A95200BFE598 /* AppDelegate.swift in Sources */,
+				BAE786D62066B3A900BFE598 /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
